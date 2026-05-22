@@ -424,7 +424,7 @@ def render_dashboard(surf, data):
     active_text = FONT_SMALL.render(f"Active Time: {data.active_time_str}", True, WHITE)
     surf.blit(active_text, (rx + 250, card_y + card_h + 8))
 
-    # Gateway / process / errors — spaced across 500px panel
+    # Gateway / process / errors — right-align errors to panel edge
     status_y = card_y + card_h + 32
     gate_color = GREEN if data.gateway_running else RED
     gate_text = FONT_SMALL.render(f"Gateway: {'●' if data.gateway_running else '○'}", True, gate_color)
@@ -435,7 +435,7 @@ def render_dashboard(surf, data):
 
     err_color = GREEN if data.errors_24h <= 1 else (YELLOW if data.errors_24h < 5 else RED)
     err_text = FONT_SMALL.render(f"Errors: {data.errors_24h}", True, err_color)
-    surf.blit(err_text, (rx + 390, status_y))
+    surf.blit(err_text, (rx + 500 - err_text.get_width() - 12, status_y))
 
     # ── Top Tools Bar Chart ────────────────────────────────────────
     if data.top_tools:
