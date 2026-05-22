@@ -47,10 +47,10 @@ Add to `~/.config/labwc/autostart`:
 (sleep 5 && python3 /home/rsletten/hermes-dashboard/dashboard.py) &
 ```
 
-## License
-
-MIT
-
 ## Photo
 
 ![Physical dashboard on the 4.3" display](demo.jpg)
+
+## License
+
+MIT
