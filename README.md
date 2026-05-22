@@ -6,7 +6,7 @@ Built with **Pygame** — shows live Hermes Agent usage stats alongside system m
 
 ## Screenshot
 
-![Dashboard](screenshot-v3.png)
+![Dashboard](preview.png)
 
 ## Features
 
