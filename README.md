@@ -6,7 +6,7 @@ Built with **Pygame** — shows live Hermes Agent usage stats alongside system m
 
 ## Screenshot
 
-![Dashboard on 4.3" DSI display](demo.jpg)
+![Dashboard on 4.3" DSI display](preview.png)
 
 ## Features
 
@@ -50,3 +50,7 @@ Add to `~/.config/labwc/autostart`:
 ## License
 
 MIT
+
+## Photo
+
+![Physical dashboard on the 4.3" display](demo.jpg)
